@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nolan</title>
+    
+    <!-- icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tabicon -->
+    <link rel="icon" href="https://i.pinimg.com/originals/3e/26/d6/3e26d6754031f68dd0c9037434d4e8cd.png" type="text/png" >
+
+    <style>
+        /* <!-- font --> */
+        @import url('https://fonts.googleapis.com/css2?family=Dai+Banna+SIL:ital,wght@1,300&family=Mukta:wght@700&family=Nanum+Myeongjo:wght@700&display=swap');
+
+        *{
+            font-family: 'Dai Banna SIL', serif;
+            font-family: 'Mukta', sans-serif;
+            font-family: 'Nanum Myeongjo', serif;
+        }
+
+        /* NavigationBar */
+        .navigation > .intro h1::selection{
+            user-select: none;
+        } 
+
+        .intro{
+            width: 40%;
+            color: black;
+            /* background-color: black; */
+            display: inline-block;
+            text-indent: 100px;
+        }
+        
+        .container{
+            width: 60%;
+            color: black;
+            /* background-color: aqua; */
+
+            display: flex;
+            justify-content: space-around;
+            align-items: right;
+            float: right;
+            margin-top: 20px;
+        }
+
+        .navigation > .container a{
+            text-decoration: none;
+            color: black;
+            user-select: none;
+        }
+
+        /* Introduction */
+
+        .img{
+            box-shadow: 1px 2px 3px black;
+            border-radius: 8px 8px;
+        }
+
+        .greeting{
+            text-align: center;
+        }  
+
+        /* Service */
+
+        .container2{
+            width: 100%;
+            height: 90vh;
+           
+            position: relative;
+        }
+
+        .img2{
+            width: 620px;
+            background-size: cover;
+            
+            position: absolute;
+            margin: 0;
+            margin-top: 100px;  
+        }
+
+        .skill{
+            position: absolute;
+            margin-left: 630px;
+            margin-top: 150px;
+        }
+
+
+        /* Projects */
+
+        .float1{
+            width: 100%;
+            height: 100vh;
+            /* background-color: brown; */
+            
+            position: relative;
+        }
+
+        .cap1{
+            position: absolute;
+            top: 280px;
+            left: 110px;
+        }
+
+        .div1{
+            width: 400px;
+            height: 300px;
+            /* background-color: blueviolet; */
+            background-image: url('https://guinatal.github.io/images/posts/Combinators.png');
+            background-size: contain;
+            border: 2px solid black;
+
+            position: absolute;
+            left: 25px;
+            top: 30px;
+
+            transition: 0.3s;
+            
+        }
+
+        .div1:hover{
+            width: 420px;
+            height: 340px;
+            transition: 0.2s;
+        }
+
+        .cap2{
+            position: absolute;
+            left: 530px;
+            top: 180px;
+        }
+
+        .div2{
+            width: 400px;
+            height: 300px;
+            /* background-color: yellow; */
+            border: 2px solid black;
+            background-image: url('https://res.cloudinary.com/practicaldev/image/fetch/s--DdwmYvBg--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/w4hdiuxmmwpl30kxy9oa.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            position: absolute;
+            left: 850px;
+            top: 30px;
+
+            transition: 0.3s;
+        }
+
+        .div2:hover{
+            width: 420px;
+            height: 340px;
+            transition: 0.2s;
+        }
+
+        .cap3{
+            position: absolute;
+            top: 310px;
+            left: 960px;
+        }
+
+        .div3{
+            width: 400px;
+            height: 280px;
+            /* background-color: green; */
+            background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*bw4hK0MYxFXbw7ylW2fR5Q.png');
+            background-size: contain;
+            border: 2px solid black;
+
+            position: absolute;
+            left: 440px;
+            top: 250px;
+
+            transition: 0.3s;
+        } 
+
+        .div3:hover{
+            width: 420px;
+            height: 340px;
+            transition: 0.2s;
+        }
+        
+        .linktext{
+            text-decoration: none;
+            color: black;
+            /* margin-left: 150px; */
+        }
+
+        
+        /* ContactMe */
+
+        .container3{
+            width: 100%;
+            height: 350px;
+            /* background-color: yellow; */
+            
+            position: relative;
+        }
+
+        .bi{
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            
+        }
+
+        .form{
+            position: absolute;
+            top: 10px;
+            left: 350px;
+        }
+
+        .submit{
+            padding: 10px 10px;
+            border: 2px inset black;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .submit:hover{
+            padding: 15px 15px;
+            color: white;
+            background-color: black;
+            border: 1px solid white;
+            border-radius: 8px 8px;
+            transition: 0.3s;
+        }
+
+        .icon{
+            position: absolute;
+            top: 10px;
+            left: 700px;
+        }
+
+        .cun{
+            margin: 20px;
+            padding: 10px 10px;
+            color: whitesmoke;
+            background-color: black;
+            border-radius: 8px 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .cun:hover{
+            padding: 15px 15px;
+            color: black;
+            background-color: white;
+            transition: 0.3s;
+        }
+        
+        
+</style>
+</head>
+    
+    <!-- Body -->
+
+<body bgcolor="#C3C3BB">
+    
+    <div class="navigation">
+        <div class="intro">
+            <h1>Nolan</h1>
+        </div>
+        <div class="container">
+            <a classs="about me" href="#aboutme"><i class="fa-regular fa-id-card"></i></i>About Me</a>
+            <a class="service" href="#services"><i class="fa-solid fa-laptop-code"></i>Service</a>
+            <a class="project" href="#projects"><i class="fa-solid fa-diagram-project"></i>Projects</a>
+            <a class="contact" href="#contact"><i class="fa-regular fa-address-book"></i>Contact</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <h1 style="text-align: center; text-transform: uppercase;" id="aboutme">About Me</h1>
+    
+    <div>
+        <table>
+            <tr style="height: 100vh;" >
+                <td>
+                    <img src="https://images.ctfassets.net/pdf29us7flmy/2ZtlOujWNf4ztl5wbRnTpC/4a394c414c6a2e3f68749802e5e4d042/GettyImages-689291632_optimized.jpg" alt="programmer"   class="img" width="100%" >
+                </td>
+                <td class="greeting">
+                    <h1>Nolan<br><br>Web Developer</h1>
+                    <p>Hello and Welcome I'm delighted to have you explore my programming portfolio. My name is Nolan, and I'm a passionate programmer with a love for crafting elegant and efficient solutions to complex problems. From the moment I wrote my first "Hello, World!" program, I knew that my journey into the world of programming was going to be an exciting one.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!-- Services -->
+
+    <h1 style="text-align: center; text-transform: uppercase;" id="services">service</h1>
+
+    <div class="container2">
+            <div class="img2">
+                    <a href="https://github.com/Nolanlike8" target="_blank" >
+                        <img src="https://github.githubassets.com/images/modules/site/copilot-preview/ui-demo.webp" alt="github" width="600px">
+                    </a>    
+            </div>
+               
+            <div class="skill">
+                <p>
+                    I thrive on challenges and am always seeking ways to expand my skill set. My journey in the world of programming has been an exciting one, marked by continuous learning and growth. Whether it's crafting intuitive user interfaces, diving into complex algorithms, or experimenting with new technologies, I'm always excited to take on new projects that allow me to push my boundaries. This portfolio is a curated showcase of some of my most engaging and diverse projects. From web development to machine learning, I've explored a wide range of domains to expand my expertise. Each project comes with a detailed description, technical insights, and, where possible, live demosor hosted versions for you to explore.
+                </p>
+                <h1>
+                    Find me out more in Github.This is my githublink  
+                    <i class="ri-arrow-right-line"></i>
+                    <a href="https://github.com/Nolanlike8" target="_blank" >
+                        <em> https://github.com/Nolanlike8 </em>
+                    </a> 
+                </h1>
+            </div>
+    </div>
+
+
+    <!-- Projects -->
+
+
+    <h1 id="projects" style="text-transform:uppercase; text-align: center;" >Projects</h1>
+
+    <div class="float1">
+        <div class="div1">
+            <a href="./combinator.html" class="linktext">
+                <h1 class="cap1">Combinator</h1>
+            </a>
+        </div>
+
+        <a href="./nolan2.html" class="linktext">
+            <h1 class="cap2">Position and Flex</h1>
+        </a>
+        
+        <div class="div2"></div>
+
+       <div class="div3"></div>
+
+        <a href="./pseudoclass2.html" class="linktext">
+            <h1 class="cap3">Pseudoclass</h1>
+        </a> 
+    </div>
+
+    <!-- ContactMe -->
+
+    <h1 style="text-transform:uppercase; text-align: center;" id="contact">Contacts</h1>
+
+    <div class="container3">
+        
+        <fieldset class="bi">
+            <legend>Contact Me</legend>
+                <div><i class="fa-brands fa-github fa-spin"></i>:Github_Nolanlike8</div> <br>
+                <div><i class="fa-solid fa-code fa-bounce"></i>:Web Junior Developer</div> <br>
+                <div><i class="fa-solid fa-phone fa-bounce"></i>:Ph.No:09*********</div> <br>
+                <div><i class="fa-solid fa-envelope fa-bounce"></i></i>:Email:Nolan@gmail.com</div>
+        </fieldset>
+        
+
+        <div class="form">
+            <form action="#" method="">
+                <fieldset>
+                    <legend>Suggestion</legend>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" class="" placeholder="Enter Your Name">
+                    </div>
+    
+                    <br>
+    
+                    <div>
+                        <label for="Email">Email:</label>
+                        <input type="text" name="email" id="email" class="" placeholder="Enter Your Email">
+                    </div>
+    
+                    <br>
+    
+                    <div>
+                        <label for="review">Suggestion:</label> <br>
+                        <textarea name="review" id="review" cols="30" rows="10" placeholder="Enter Your suggestion"></textarea>
+                    </div>
+    
+                    <div>
+                        <input type="submit" value="Submit" class="submit">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="icon">
+            <div style="font-size: 100px;"><i class="fa-brands fa-facebook"></i></div>
+            <div>Username_@Nolanlike8</div>
+            <div style="font-size: 100px;"><i class="fa-brands fa-instagram"></i>Instagram</div>
+            <div>Username_@Nolanlike8</div>
+            <button class="cun">Contact us NOW</button>
+        </div>
+
+    </div>
+</body>
+</html>
